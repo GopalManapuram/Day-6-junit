@@ -26,9 +26,9 @@ class CalculatorTest {
 		"0, 5, 5",    // Zero with positive
 		"0, 0, 0"     // Zero with zero
 	})
-	void testAddition(int a, int b, int expected) {
-		int result = calculator.add(a, b);
-		assertEquals(expected, result, a + " + " + b + " should be " + expected);
+	void testAddition(int i, int j, int expected) {
+		int result = calculator.add(i, j);
+		assertEquals(expected, result, i + " + " + j + " should be " + expected);
 	}
 
 	// Test Subtraction
@@ -40,9 +40,9 @@ class CalculatorTest {
 		"0, 5, -5",
 		"0, 0, 0"
 	})
-	void testSubtraction(int a, int b, int expected) {
-		int result = calculator.subtract(a, b);
-		assertEquals(expected, result, a + " - " + b + " should be " + expected);
+	void testSubtraction(int i, int j, int expected) {
+		int result = calculator.subtract(i, j);
+		assertEquals(expected, result, i + " - " + j + " should be " + expected);
 	}
 
 	// Test Multiplication
@@ -54,9 +54,9 @@ class CalculatorTest {
 		"0, 5, 0",
 		"0, 0, 0"
 	})
-	void testMultiplication(int a, int b, int expected) {
-		int result = calculator.multiply(a, b);
-		assertEquals(expected, result, a + " * " + b + " should be " + expected);
+	void testMultiplication(int i, int j, int expected) {
+		int result = calculator.multiply(i, j);
+		assertEquals(expected, result, i + " * " + j + " should be " + expected);
 	}
 
 	// Test Division
@@ -67,9 +67,9 @@ class CalculatorTest {
 		"-10, -2, 5",
 		"0, 5, 0"
 	})
-	void testDivision(int a, int b, int expected) {
-		int result = calculator.divide(a, b);
-		assertEquals(expected, result, a + " / " + b + " should be " + expected);
+	void testDivision(int i, int j, int expected) {
+		int result = calculator.divide(i, j);
+		assertEquals(expected, result, i + " / " + j + " should be " + expected);
 	}
 
 	// Test Division by Zero
